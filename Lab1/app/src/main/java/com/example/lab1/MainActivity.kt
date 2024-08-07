@@ -3,11 +3,8 @@ package com.example.lab1
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,6 +30,12 @@ fun MyApp() {
         Text(text = "Texto 1", modifier = Modifier.padding(bottom = 8.dp))
         Text(text = "Texto 2", modifier = Modifier.padding(bottom = 8.dp))
         Text(text = "Texto 3", modifier = Modifier.padding(bottom = 8.dp))
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Button(onClick = { /* Acción */ }) {
+            Text(text = "Presioname")
+        }
     }
 }
 
